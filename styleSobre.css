@@ -1,0 +1,22 @@
+.column1{
+    width: 50%;
+}
+.row1{
+    display: flex;
+    margin-top: 50px;
+}
+.colum1{
+    width: 50%;
+    height: 400px;
+    
+}
+#text1{
+    margin: 15px;
+}
+.colum2{
+    width: 50%;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
