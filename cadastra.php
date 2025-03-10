@@ -12,6 +12,7 @@ $sql = "INSERT INTO tb_user (name, email, password) VALUES ('$nome', '$email', '
 
 if ($conn->query($sql) === TRUE) {
     echo "Usuário cadastrado com sucesso cadastrado com sucesso!";
+    header("Location: login.html");
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;
 }

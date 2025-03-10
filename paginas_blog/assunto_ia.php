@@ -2,7 +2,7 @@
 
 session_start();
 if (!isset($_SESSION['id'])) {
-    header("Location: login.html");
+    header("Location: ../login.html");
     exit();
 } 
 ?>
@@ -53,6 +53,11 @@ if (!isset($_SESSION['id'])) {
             border-radius: 5px;
         }
 
+        .pag {
+            text-align: center;
+            margin: 30px;
+        }
+
         /* Responsividade para telas menores */
         @media (max-width: 600px) {
             nav {
@@ -75,21 +80,26 @@ if (!isset($_SESSION['id'])) {
 <body>
 <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="cadastra.html">Cadastro</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="perfil.php">Perfil</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+            <li><a href="../cadastra.html">Cadastro</a></li>
+            <li><a href="../login.html">Login</a></li>
+            <li><a href="../logout.php">Logout</a></li>
         </ul>
     </nav>
-    <h1>Assunto interessante</h1>
-    <p>textotextotextotextotextotextotextotextotextotexto
-    textotextotextotextotextotextotextotextotextotextotexto
-    textotextotextotextotextotextotextotextotextotextotexto
-    textotextotextotextotextotextotextotextotextotextotexto
-    textotextotextotextotextotextotextotextotextotextotexto
-    textotextotextotextotextotextotextotextotextotexto
-    </p>
-    <p>Visualizando como: <?php echo $_SESSION['nome']?> </p>
+    <div class="pag">
+        <h1 style="text-align: center; margin: 30px; font-size:40px;">Como o deepseek foi criado</h1>
+
+        <img src="../deepseek.png" width="400px" style="margin: 20px;">
+
+        <p>
+        O DeepSeek foi desenvolvido com base em modelos de IA generativa, combinando aprendizado por reforço e engenharia de recompensa. Essa abordagem permite que o algoritmo aprenda interagindo com um ambiente, através de tentativa e erro, recebendo feedback sobre suas saídas.
+        A DeepSeek foi fundada por Wenfeng Guo, com o objetivo de criar uma IA que pudesse resolver problemas complexos e auxiliar em diversas áreas, como produção de conteúdo e suporte ao cliente. A empresa conta com uma equipe de jovens talentos, muitos deles recém-formados em universidades de elite chinesas, como Tsinghua e Peking.
+        Uma das principais características do DeepSeek é a sua eficiência no armazenamento de informações na memória do computador. O modelo V3 utiliza uma técnica de compactação de dados que facilita o armazenamento e o acesso rápido às informações relevantes.
+        A DeepSeek está disponível para diferentes públicos, desde usuários individuais até empresas e desenvolvedores que desejam integrar a tecnologia em seus serviços. Algumas versões podem ter acesso gratuito, enquanto outras mais avançadas podem estar disponíveis sob planos pagos, dependendo dos recursos oferecidos.
+        </p>
+        <br>
+        <p>Visualizando como: <?php echo $_SESSION['nome']?> </p>
+    </div>
 </body>
 </html>

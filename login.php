@@ -23,7 +23,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         $_SESSION['id'] = $row['id'];
         $_SESSION['nome'] = $row['name'];
         $_SESSION['email'] = $row['email'];
-        header("Location: perfil.php");
+        header("Location: index.php");
         exit();
     } else {
         echo "Senha incorreta!";
