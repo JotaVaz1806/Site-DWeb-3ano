@@ -35,14 +35,18 @@ if (!isset($_SESSION['id'])) {
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="sobre.php">Sobre</a></li>
-        <li><a href="cadastra.html">Cadastro</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="logout.php">Logout</a></li>
-      </ul>
+  <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="postar_artigo.php">Postar artigo</a></li>
+            <li><a href="perfil.php">Perfil</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="./php/logout.php">Logout</a></li>
+        </ul>
     </nav>
     <h1 style="text-align: center; margin: 30px; font-size:40px;">ThinkFlow</h1>
 

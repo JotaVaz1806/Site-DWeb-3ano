@@ -14,8 +14,22 @@ if (!isset($_SESSION['id'])) {
     <title>Postar Artigo</title>
 
     <link rel="stylesheet" href="./style/geral.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
   </head>
   <body>
+  <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="postar_artigo.php">Postar artigo</a></li>
+            <li><a href="perfil.php">Perfil</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="./php/logout.php">Logout</a></li>
+        </ul>
+</nav>
     <form action="./php/post_artigo.php" method="POST">
         <p>Postagem de artigo</p>
         <label name="title">Título</label><br />
