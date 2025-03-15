@@ -47,25 +47,22 @@ if (!isset($_SESSION['id'])) {
     <h1 style="text-align: center; margin: 30px; font-size:40px;">ThinkFlow</h1>
 
     <div class="blog">
-      <div class="card">
-        <a href="./paginas_blog/assunto_ia.php">
-          <img src="deepseek.png" width="200px">
-          <p>Como o deepseek foi criado</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="./paginas_blog/robo.php">
-          <img src="robo.png" width="200px">
-          <p>Conheça o Robô Humanoide Que Imita <br>Movimentos Humanos e Já Possui Articulações</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="./paginas_blog/grammy.php">
-          <img src="grammy.png" width="200px">
-          <p>Grammy</p>
-        </a>
-      </div>
-      
+      <?php
+          include ('./php/connect.php');
+          $sql ="SELECT * FROM tb_artigo";
+          $resultado = $conn->query("$sql");
+          while($resultset = $resultado->fetch_array())
+          {
+      ?>
+        <div class='card'>
+          <a href=<?php echo './artigo.php?artigo_id='.$resultset["id"]?>>
+            <img src=<?php echo $resultset["img_url"]?> width="200px">
+            <p><?php echo $resultset["title"]?></p>
+          </a>
+        </div>
+      <?php
+         }
+      ?>
     </div>
   </body>
 </html>

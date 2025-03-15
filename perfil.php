@@ -36,5 +36,6 @@ if (!isset($_SESSION['id'])) {
         <p>Nome: <?php echo $_SESSION['nome']?> </p>
         <p>Email: <?php echo $_SESSION['email']?></p>
     </div>
+    <a href="./editar_perfil.php">Editar Perfil</a>
 </body>
 </html>
