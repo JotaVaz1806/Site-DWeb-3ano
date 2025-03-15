@@ -40,6 +40,7 @@ if (!isset($_SESSION['id'])) {
         <p>Nome: <?php echo $_SESSION['nome']?> </p>
         <p>Email: <?php echo $_SESSION['email']?></p>
     </div>
-    <a href="./editar_perfil.php">Editar Perfil</a>
+    <a href="./editar_perfil.php">Editar Perfil</a> <br><br><br><br>
+    <a href="./php/deletar_perfil.php">Deletar Perfil</a>
 </body>
 </html>
