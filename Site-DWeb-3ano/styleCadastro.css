@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#button1 {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+}
+input {
+  margin: 15px;
+}
+form {
+  padding: 15px;
+  color: white;
+  border-radius: 12px;
+  width: 350px;
+  height: 700px;
+}
+#mainbox {
+  margin: auto;
+  background-color: #5a5a5a;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(136, 136, 136, 0.3);
+}
+p {
+  text-align: center;
+  font-size: 4vh;
+  color: black;
+}
+#email {
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+#nome {
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+#password {
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+#nomeJogo{
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+
+}
+#preco{
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+
+}
+#categoria{
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+
+}
+#descricao{
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
